@@ -13,10 +13,7 @@ Get-WindowsAutoPilotInfo.ps1 -OutputFile "intunehash.csv"
 
 $filePath = "intunehash.csv"
 $fileContent = Get-Content -Path $filePath -Raw
-
-cmd
 set FILE_PATH=%USERPROFILE%\Downloads\intunehash.csv
-# Upload the file content to termbin.com
 curl -X POST -d "api_dev_key=fIM05J0hZe7YWUNgIZ0aDiUvoiaDnRda" -d "api_option=paste" --data-urlencode "api_paste_code@$filepath" https://pastebin.com/api/api_post.php
 
 
