@@ -1,10 +1,3 @@
-# ::::::::::::::::USER INPUTS INTO CMD AS BATCH/CMD:::::::::::::::::::::
-# this will automate the steps to gen intune hash on machine, then upload to secure pastebin and output the url
-#   in case curl isn't installed on older win versions, use 2
-#		1.	curl -o hash.ps1 'shorturl' | pwsh sxp bypass
-#		2.	Invoke-WebRequest -Uri $url -OutFile $outputFile
-# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 CD Downloads
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 install-script Get-WindowsAutopilotinfo -Force
